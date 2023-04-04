@@ -1,15 +1,15 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-addon-theme-provider",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "Addon to manage global themes provided by Styled components, Emotion e. t. c.",
   "keywords": [
-    "storybook-addons"
+    "emotion", "styled components", "theme", "provider", "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/morewings/storybook-addon-theme-provider"
   },
-  "author": "package-author",
+  "author": "Dima Vyshnkiakov <morewings@gmail.com>",
   "license": "MIT",
   "exports": {
     ".": {
@@ -39,7 +39,6 @@
     "*.d.ts"
   ],
   "scripts": {
-    "postinstall": "node scripts/welcome.js",
     "clean": "rimraf ./dist",
     "prebuild": "yarn clean",
     "build": "tsup",
@@ -100,9 +99,9 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "theme-provider",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "react"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }

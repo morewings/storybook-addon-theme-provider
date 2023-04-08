@@ -19,8 +19,8 @@ export const withThemeProvider =
       canvasElement: unknown;
     }>
   ) => {
-    const [{ themes }] = useGlobals();
-    // const { themes } = useGlobalThemesPreview();
+    // const [{ themes }] = useGlobals();
+    const { themes } = useGlobalThemesPreview();
 
     // @ts-ignore
     const selectedTheme = themes.find(({ selected }) => selected);

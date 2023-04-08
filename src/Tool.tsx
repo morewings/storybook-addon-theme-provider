@@ -20,6 +20,7 @@ import {
 import { ADDON_ID, PARAM_KEY, TOOL_ID } from "./constants";
 
 import { useGlobalThemesManager } from "./useGlobalThemes";
+import { useToggle } from "./useToggle";
 
 export type ThemeType = {
   name: string;
@@ -67,31 +68,32 @@ const updateSelectedTheme = (
 export const Tool = memo(function MyAddonSelector() {
   const [globals, updateGlobals] = useGlobals();
   const { themes, updateThemes } = useGlobalThemesManager();
+  const {isActive, toggleThemeButton} = useToggle()
 
-  const isActive = [true, "true"].includes(globals[PARAM_KEY]);
+  // const isActive = [true, "true"].includes(globals[PARAM_KEY]);
 
-  const toggleMyTool = useCallback(() => {
-    updateGlobals({
-      [PARAM_KEY]: !isActive,
-    });
-  }, [isActive]);
+  // const toggleMyTool = useCallback(() => {
+  //   updateGlobals({
+  //     [PARAM_KEY]: !isActive,
+  //   });
+  // }, [isActive]);
 
   const handleSelect = useCallback(
     (name: string) => {
-      updateGlobals({ themes: updateSelectedTheme(globals.themes, name) });
+      updateThemes(updateSelectedTheme(themes, name));
     },
-    [globals.themes]
+    [themes, updateThemes]
   );
 
   return (
     <WithTooltipPure
-      tooltip={<ThemeList onSelect={handleSelect} themes={globals.themes} />}
+      tooltip={<ThemeList onSelect={handleSelect} themes={themes} />}
     >
       <IconButton
         key={TOOL_ID}
         active={isActive}
         title="Enable my addo asd"
-        onClick={toggleMyTool}
+        onClick={toggleThemeButton}
       >
         <Icons icon="mirror" />
       </IconButton>

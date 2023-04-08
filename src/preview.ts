@@ -17,7 +17,7 @@ import {MockProvider} from './MockProvider';
  * and update the entry prop in tsup.config.ts to use "src/preview.tsx",
  */
 
-const preview: ProjectAnnotations<Renderer> = {
+const preview: ProjectAnnotations<Renderer> = process.env.NODE_ENV === 'development' ? {
   decorators: [withThemeProvider(MockProvider)],
   globals: {
     selectedTheme: 'foo',
@@ -37,6 +37,6 @@ const preview: ProjectAnnotations<Renderer> = {
       }
     ]
   },
-};
+} : {};
 
 export default preview;

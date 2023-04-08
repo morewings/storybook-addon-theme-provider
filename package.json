@@ -46,7 +46,7 @@
     "clean": "rimraf ./dist",
     "prebuild": "yarn clean",
     "build": "tsup",
-    "build:watch": "yarn build --watch",
+    "build:watch": "NODE_ENV=development yarn build --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"yarn build:watch\" \"yarn storybook --quiet\"",
     "prerelease": "zx scripts/prepublish-checks.mjs",

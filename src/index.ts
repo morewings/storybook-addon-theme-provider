@@ -1,2 +1,2 @@
-// make it work with --isolatedModules
-export default {};
+export { withThemeProvider } from "./withThemeProvider";
+export type {ThemeType} from './ThemeType';

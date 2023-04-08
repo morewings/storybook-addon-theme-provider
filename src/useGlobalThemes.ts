@@ -3,20 +3,25 @@ import { useGlobals as useGlobalsPreview } from "@storybook/preview-api";
 import { useCallback } from "react";
 import {ThemeType} from './ThemeType';
 
-export const useGlobalThemesManager = () => {
-    const [{themes}, updateGlobals] = useGlobalsManager();
-    const updateThemes = useCallback((nextThemes: ThemeType[]) => {
-        updateGlobals({themes: nextThemes})
+export const useGlobalThemesManager = (): {
+    themes: ThemeType[];
+    selectedTheme: string;
+    setSelectedTheme: (nextTheme: string) => void
+} => {
+    const [{themes, selectedTheme}, updateGlobals] = useGlobalsManager();
+
+    const setSelectedTheme = useCallback((nextTheme: string) => {
+        updateGlobals({selectedTheme: nextTheme})
     }, [updateGlobals])
 
-    return { themes, updateThemes };
+    return { themes, setSelectedTheme, selectedTheme};
 }
 
-export const useGlobalThemesPreview = () => {
-    const [{themes}, updateGlobals] = useGlobalsPreview();
-    const updateThemes = useCallback((nextThemes: ThemeType[]) => {
-        updateGlobals({themes: nextThemes})
-    }, [updateGlobals])
+export const useGlobalThemesPreview = (): {
+    selectedTheme: string;
+    themes: ThemeType[]
+} => {
+    const [{themes, selectedTheme}] = useGlobalsPreview();
 
-    return { themes, updateThemes };
+    return { themes, selectedTheme };
 }

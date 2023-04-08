@@ -1,7 +1,6 @@
 import React, {
   memo,
   useCallback,
-  FC,
 } from "react";
 import {
   Icons,
@@ -12,7 +11,6 @@ import {
 import { TOOL_ID } from "./constants";
 import {ThemeList} from './components/ThemeList';
 import { useGlobalThemesManager } from "./useGlobalThemes";
-import { useToggle } from "./useToggle";
 
 export type ThemeType = {
   name: string;
@@ -21,24 +19,14 @@ export type ThemeType = {
   themeObject: Record<string, unknown>;
 };
 
-const updateSelectedTheme = (
-  themes: ThemeType[],
-  name: string
-): ThemeType[] => {
-  return themes.map((theme) => {
-    return { ...theme, selected: theme.name === name };
-  });
-};
-
 export const Tool = memo(function MyAddonSelector() {
-  const { themes, updateThemes } = useGlobalThemesManager();
-  const {isActive, toggleThemeButton} = useToggle()
+  const { themes, setSelectedTheme } = useGlobalThemesManager();
 
   const handleSelect = useCallback(
     (name: string) => {
-      updateThemes(updateSelectedTheme(themes, name));
+      setSelectedTheme(name)
     },
-    [themes, updateThemes]
+    [themes]
   );
 
   return (
@@ -47,9 +35,7 @@ export const Tool = memo(function MyAddonSelector() {
     >
       <IconButton
         key={TOOL_ID}
-        active={isActive}
-        title="Enable my addo asd"
-        onClick={toggleThemeButton}
+        title="Switch theme"
       >
         <Icons icon="mirror" />
       </IconButton>

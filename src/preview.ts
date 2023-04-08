@@ -9,7 +9,6 @@
  * https://storybook.js.org/docs/react/writing-stories/decorators
  */
 import type { Renderer, ProjectAnnotations } from "@storybook/types";
-import { PARAM_KEY } from "./constants";
 import { withThemeProvider } from "./withThemeProvider";
 import {MockProvider} from './MockProvider';
 
@@ -21,12 +20,10 @@ import {MockProvider} from './MockProvider';
 const preview: ProjectAnnotations<Renderer> = {
   decorators: [withThemeProvider(MockProvider)],
   globals: {
-    [PARAM_KEY]: false,
+    selectedTheme: 'foo',
     themes: [
       {
         name: 'foo',
-        selected: true,
-        color: '#FFFFFF',
         themeObject: {
           name: 'foo'
         }

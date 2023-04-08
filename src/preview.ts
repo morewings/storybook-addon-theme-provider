@@ -11,7 +11,9 @@
 import type { Renderer, ProjectAnnotations } from "@storybook/types";
 import { PARAM_KEY } from "./constants";
 import { withGlobals } from "./withGlobals";
+import { withThemeProvider } from "./withThemeProvider";
 import { withRoundTrip } from "./withRoundTrip";
+import {MockProvider} from './MockProvider';
 
 /**
  * Note: if you want to use JSX in this file, rename it to `preview.tsx`
@@ -19,9 +21,26 @@ import { withRoundTrip } from "./withRoundTrip";
  */
 
 const preview: ProjectAnnotations<Renderer> = {
-  decorators: [withGlobals, withRoundTrip],
+  decorators: [withThemeProvider(MockProvider)],
   globals: {
     [PARAM_KEY]: false,
+    themes: [
+      {
+        name: 'foo',
+        selected: true,
+        color: '#FFFFFF',
+        themeObject: {
+          name: 'foo'
+        }
+      },
+      {
+        name: 'bar',
+        color: '#AAAAAA',
+        themeObject: {
+          name: 'bar'
+        }
+      }
+    ]
   },
 };
 

@@ -48,7 +48,7 @@
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build"
   },
   "devDependencies": {

@@ -7,9 +7,19 @@
   display: inline-block;
   line-height: 1;
 }
+
+.foo .storybook-button {
+  background-color: #1ea7fd;
+}
+
+.bar .storybook-button {
+  background-color: #abfd1e;
+}
+
+
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: #abfd1e;
 }
 .storybook-button--secondary {
   color: #333;

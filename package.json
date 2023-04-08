@@ -1,9 +1,13 @@
 {
   "name": "storybook-addon-theme-provider",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Addon to manage global themes provided by Styled components, Emotion e. t. c.",
   "keywords": [
-    "emotion", "styled components", "theme", "provider", "storybook-addons"
+    "emotion",
+    "styled components",
+    "theme",
+    "provider",
+    "storybook-addons"
   ],
   "repository": {
     "type": "git",

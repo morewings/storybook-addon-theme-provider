@@ -1,24 +1,16 @@
 import React, {
   memo,
   useCallback,
-  useEffect,
   FC,
-  Children,
-  ReactElement,
-  cloneElement,
-  useState,
 } from "react";
-import { useGlobals, useStorybookApi } from "@storybook/manager-api";
 import {
   Icons,
   IconButton,
-  TooltipLinkList,
-  TooltipNote,
   WithTooltipPure,
-  ListItem,
 } from "@storybook/components";
-import { ADDON_ID, PARAM_KEY, TOOL_ID } from "./constants";
 
+import { TOOL_ID } from "./constants";
+import {ThemeList} from './components/ThemeList';
 import { useGlobalThemesManager } from "./useGlobalThemes";
 import { useToggle } from "./useToggle";
 
@@ -27,33 +19,6 @@ export type ThemeType = {
   color?: string;
   selected?: boolean;
   themeObject: Record<string, unknown>;
-};
-
-const ThemeList: FC<{
-  themes?: ThemeType[];
-  onSelect: (name: string) => void;
-}> = ({ themes, onSelect }) => {
-  const hasThemes = !!themes && Array.isArray(themes);
-  return (
-    <div>
-      {hasThemes &&
-        themes.map(({ name, color }) => {
-          return (
-            <ListItem
-              onSelect={(e) => {
-                console.log("select", e);
-              }}
-              onClick={() => {
-                onSelect(name);
-              }}
-              key={name}
-              title={name}
-              right={<div>{color}</div>}
-            />
-          );
-        })}
-    </div>
-  );
 };
 
 const updateSelectedTheme = (
@@ -66,17 +31,8 @@ const updateSelectedTheme = (
 };
 
 export const Tool = memo(function MyAddonSelector() {
-  const [globals, updateGlobals] = useGlobals();
   const { themes, updateThemes } = useGlobalThemesManager();
   const {isActive, toggleThemeButton} = useToggle()
-
-  // const isActive = [true, "true"].includes(globals[PARAM_KEY]);
-
-  // const toggleMyTool = useCallback(() => {
-  //   updateGlobals({
-  //     [PARAM_KEY]: !isActive,
-  //   });
-  // }, [isActive]);
 
   const handleSelect = useCallback(
     (name: string) => {

@@ -10,9 +10,7 @@
  */
 import type { Renderer, ProjectAnnotations } from "@storybook/types";
 import { PARAM_KEY } from "./constants";
-import { withGlobals } from "./withGlobals";
 import { withThemeProvider } from "./withThemeProvider";
-import { withRoundTrip } from "./withRoundTrip";
 import {MockProvider} from './MockProvider';
 
 /**

@@ -1,13 +1,9 @@
 import type { FC } from "react";
-import React, { ReactNode } from "react";
+import React, { ReactNode, memo } from "react";
 import type {
-  Renderer,
   PartialStoryFn as StoryFunction,
-  StoryContext,
   ReactJSXElement,
 } from "@storybook/types";
-import { useEffect, useGlobals } from "@storybook/preview-api";
-import { PARAM_KEY } from "./constants";
 import {useGlobalThemesPreview} from './useGlobalThemes';
 
 export const withThemeProvider =
@@ -19,7 +15,6 @@ export const withThemeProvider =
       canvasElement: unknown;
     }>
   ) => {
-    // const [{ themes }] = useGlobals();
     const { themes } = useGlobalThemesPreview();
 
     // @ts-ignore

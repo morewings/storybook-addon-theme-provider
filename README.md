@@ -1,5 +1,8 @@
 # Storybook Addon theme-provider
 
+[![npm version](https://badge.fury.io/js/storybook-addon-theme-provider.svg)](https://www.npmjs.com/package/storybook-addon-theme-provider)
+[![storybook addon](https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg)](https://storybook.js.org/addons/storybook-addon-theme-provider)
+
 Addon to manage global themes provided by Styled components, Emotion, React e. t. c. **This version is compatible Storybook version 7.**
 
 <img src="./addon-demo.gif" alt="Storybook Addon theme-provider" width="430" height="234">

@@ -1,10 +1,10 @@
 import { useGlobals as useGlobalsManager } from "@storybook/manager-api";
 import { useGlobals as useGlobalsPreview } from "@storybook/preview-api";
 import { useCallback } from "react";
-import {ThemeType} from './ThemeType';
+import {ThemeConfigType} from './ThemeConfigType';
 
 export const useGlobalThemesManager = (): {
-    themes: ThemeType[];
+    themes: ThemeConfigType[];
     selectedTheme: string;
     setSelectedTheme: (nextTheme: string) => void
 } => {
@@ -19,7 +19,7 @@ export const useGlobalThemesManager = (): {
 
 export const useGlobalThemesPreview = (): {
     selectedTheme: string;
-    themes: ThemeType[]
+    themes: ThemeConfigType[]
 } => {
     const [{themes, selectedTheme}] = useGlobalsPreview();
 

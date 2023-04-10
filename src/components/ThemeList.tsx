@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { ListItem } from '@storybook/components';
-import { ThemeType } from '../features/ThemeType';
+import { ThemeConfigType } from '../features/ThemeConfigType';
 import { useGlobalThemesManager } from '../features/useGlobalThemes';
 import {Color} from './Color';
 
 export const ThemeList: FC<{
-    themes?: ThemeType[];
+    themes?: ThemeConfigType[];
     onSelect: (name: string) => void;
 }> = ({ themes, onSelect }) => {
     const { selectedTheme } = useGlobalThemesManager();

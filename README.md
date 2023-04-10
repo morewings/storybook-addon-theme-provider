@@ -33,7 +33,7 @@ export default {
 
 ## Use themes
 
-Add decorator `withThemeProvider` to `.storybook/preview.(js|ts)`.
+Add decorator `withThemeProvider` to `.storybook/preview.(js|ts)`. This applies theme settings on **global level**.
 
 ```js
 import {withThemeProvider} from 'storybook-addon-theme-provider';
@@ -46,12 +46,12 @@ export default {
         ///...
     ],
     globals: {
-        // Initial selected theme name
+        // Set initially selected theme name
         selectedTheme: 'foo',
-        // List of available themes
+        // Provide a list of available themes
         themes: [
             {
-                // Provide name for the theme.
+                // Provide a name for the theme.
                 name: 'foo',
                 // Set a color to display after theme name
                 color: 'red',
@@ -74,8 +74,20 @@ export default {
 }
 ```
 
+It's also possible to enable decorator on story level.
+
+```js
+// some CSF story file
+
+export const story = {
+  decorators: [withThemeProvider(Provider)]
+};
+```
+
+## Use `Provider` component
+
 `Provider` is a React component which receives `theme` prop, containing selected theme object, and `children` nodes. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
-ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype). 
+ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype).
 
 Developer can use custom `Provider` component as well.
 
@@ -86,16 +98,6 @@ export const Provider: FC<{theme: unknown; children?: ReactNode}> = ({theme, chi
     // apply theme somehow
     return <div>{children}</div>
 }
-```
-
-It's also possible to enable decorator on story level.
-
-```js
-// some CSF story file
-
-export const story = {
-  decorators: [withThemeProvider(Provider)]
-};
 ```
 
 

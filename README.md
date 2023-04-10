@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/storybook-addon-theme-provider.svg)](https://www.npmjs.com/package/storybook-addon-theme-provider)
 [![npm](https://img.shields.io/npm/dm/storybook-addon-theme-provider)](http://npm-stats.org/#/storybook-addon-theme-provider)
 
-Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). **This version is compatible Storybook version 7.**
+Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). **This addon is compatible Storybook version 7.**
 
 <img src="./addon-demo.gif" alt="Storybook Addon theme-provider" width="430" height="234">
 

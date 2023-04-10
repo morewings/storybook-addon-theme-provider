@@ -33,7 +33,7 @@ export default {
 
 ## Use themes
 
-Add decorator `withThemeProvider` to `.storybook/preview.ts`.
+Add decorator `withThemeProvider` to `.storybook/preview.(js|ts)`.
 
 ```js
 import {withThemeProvider} from 'storybook-addon-theme-provider';
@@ -74,8 +74,10 @@ export default {
 }
 ```
 
-`Provider` is a React component which receives `theme` props containing selected theme object. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
-ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype).
+`Provider` is a React component which receives `theme` prop, containing selected theme object, and `children` nodes. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
+ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype). 
+
+Developer can use custom `Provider` component as well.
 
 ```tsx
 import React, {FC, ReactNode} from 'react';
@@ -86,7 +88,7 @@ export const Provider: FC<{theme: unknown; children?: ReactNode}> = ({theme, chi
 }
 ```
 
-It's also possible to enable decorator on specific story level.
+It's also possible to enable decorator on story level.
 
 ```js
 // some CSF story file

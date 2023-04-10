@@ -15,12 +15,14 @@ export const withThemeProvider =
       canvasElement: unknown;
     }>
   ) => {
-    const { themes, selectedTheme } = useGlobalThemesPreview();
+    const { themes = [], selectedTheme } = useGlobalThemesPreview();
 
     // @ts-ignore
-    const selectedThemeData = themes.find(({ name }) => name === selectedTheme);
+    const selectedThemeData = themes.find(
+      ({ name }) => Boolean(selectedTheme) && name === selectedTheme
+    );
 
     return (
-      <Provider theme={selectedThemeData.themeObject}>{StoryFn()}</Provider>
+      <Provider theme={selectedThemeData?.themeObject}>{StoryFn()}</Provider>
     );
   };

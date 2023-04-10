@@ -4,8 +4,8 @@ import { useCallback } from "react";
 import {ThemeConfigType} from './ThemeConfigType';
 
 export const useGlobalThemesManager = (): {
-    themes: ThemeConfigType[];
-    selectedTheme: string;
+    themes?: ThemeConfigType[];
+    selectedTheme?: string;
     setSelectedTheme: (nextTheme: string) => void
 } => {
     const [{themes, selectedTheme}, updateGlobals] = useGlobalsManager();
@@ -18,8 +18,8 @@ export const useGlobalThemesManager = (): {
 }
 
 export const useGlobalThemesPreview = (): {
-    selectedTheme: string;
-    themes: ThemeConfigType[]
+    selectedTheme?: string;
+    themes?: ThemeConfigType[]
 } => {
     const [{themes, selectedTheme}] = useGlobalsPreview();
 

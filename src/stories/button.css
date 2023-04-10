@@ -10,16 +10,17 @@
 
 .foo .storybook-button {
   background-color: #1ea7fd;
+  color: white;
 }
 
 .bar .storybook-button {
+  color: #333;
   background-color: #abfd1e;
 }
 
 
 .storybook-button--primary {
   color: white;
-  background-color: #abfd1e;
 }
 .storybook-button--secondary {
   color: #333;

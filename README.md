@@ -6,7 +6,7 @@
 
 Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). **This addon is compatible Storybook version 7.**
 
-<img src="./addon-demo.gif" alt="Storybook Addon theme-provider" width="430" height="234">
+<img src="./addon-demo-high.gif" alt="Storybook Addon theme-provider" width="429" height="234">
 
 ## Install
 

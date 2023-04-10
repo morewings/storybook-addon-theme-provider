@@ -24,13 +24,14 @@ const preview: ProjectAnnotations<Renderer> = process.env.NODE_ENV === 'developm
     themes: [
       {
         name: 'foo',
+        color: '#1ea7fd',
         themeObject: {
           name: 'foo'
         }
       },
       {
         name: 'bar',
-        color: '#AAAAAA',
+        color: '#abfd1e',
         themeObject: {
           name: 'bar'
         }

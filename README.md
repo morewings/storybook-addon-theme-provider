@@ -35,9 +35,6 @@ export default {
 
 Add decorator `withThemeProvider` to `.storybook/preview.ts`.
 
-`Provider` is a React component which receives `theme` props containing selected theme object. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
-ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype).
-
 ```js
 import {withThemeProvider} from 'storybook-addon-theme-provider';
 import {Provider} from './Provider';
@@ -76,6 +73,9 @@ export default {
     //...
 }
 ```
+
+`Provider` is a React component which receives `theme` props containing selected theme object. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
+ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype).
 
 ```tsx
 import React, {FC, ReactNode} from 'react';

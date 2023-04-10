@@ -1,7 +1,7 @@
 import { useGlobals } from '@storybook/manager-api';
 import { useCallback } from 'react';
 
-import { PARAM_KEY } from './constants';
+import { PARAM_KEY } from '../constants';
 
 export const useToggle = () => {
     const [globals, updateGlobals] = useGlobals();

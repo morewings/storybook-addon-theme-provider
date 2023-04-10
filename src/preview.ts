@@ -9,8 +9,8 @@
  * https://storybook.js.org/docs/react/writing-stories/decorators
  */
 import type { Renderer, ProjectAnnotations } from "@storybook/types";
-import { withThemeProvider } from "./withThemeProvider";
-import {MockProvider} from './MockProvider';
+import { withThemeProvider } from "./features/withThemeProvider";
+import {MockProvider} from './components/MockProvider';
 
 /**
  * Note: if you want to use JSX in this file, rename it to `preview.tsx`

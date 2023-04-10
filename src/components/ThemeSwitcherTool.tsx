@@ -8,9 +8,9 @@ import {
   WithTooltipPure,
 } from "@storybook/components";
 
-import { TOOL_ID } from "./constants";
-import {ThemeList} from './components/ThemeList';
-import { useGlobalThemesManager } from "./useGlobalThemes";
+import { TOOL_ID } from "../constants";
+import {ThemeList} from './ThemeList';
+import { useGlobalThemesManager } from "../features/useGlobalThemes";
 
 export type ThemeType = {
   name: string;
@@ -19,7 +19,7 @@ export type ThemeType = {
   themeObject: Record<string, unknown>;
 };
 
-export const Tool = memo(function MyAddonSelector() {
+export const ThemeSwitcherTool = memo(function MyAddonSelector() {
   const { themes, setSelectedTheme } = useGlobalThemesManager();
 
   const handleSelect = useCallback(

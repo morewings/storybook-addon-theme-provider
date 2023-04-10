@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { ListItem } from '@storybook/components';
-import { ThemeType } from '../Tool';
-import { useGlobalThemesManager } from '../useGlobalThemes';
+import { ThemeType } from '../features/ThemeType';
+import { useGlobalThemesManager } from '../features/useGlobalThemes';
 import {Color} from './Color';
 
 export const ThemeList: FC<{

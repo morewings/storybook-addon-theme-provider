@@ -14,8 +14,8 @@ Addon to manage global themes provided by Styled components, Emotion or any othe
 
 ```shell
 npm i -D storybook-addon-theme-provider
-yarn add -d storybook-addon-theme-provider
-pnpm i -Dstorybook-addon-theme-provider
+yarn add -D storybook-addon-theme-provider
+pnpm i -D storybook-addon-theme-provider
 ```
 
 2. Register addon in `.storybook/main.(js|ts)`

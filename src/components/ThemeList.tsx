@@ -22,7 +22,7 @@ export const ThemeList: FC<{
           <ListItem
             active={selectedTheme === name}
             onClick={() => {
-              onSelect(name);
+              selectedTheme !== name && onSelect(name);
             }}
             key={name}
             title={name}

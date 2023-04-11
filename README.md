@@ -3,7 +3,6 @@
 [![storybook addon](https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg)](https://storybook.js.org/addons/storybook-addon-theme-provider)
 [![npm version](https://badge.fury.io/js/storybook-addon-theme-provider.svg)](https://www.npmjs.com/package/storybook-addon-theme-provider)
 [![npm](https://img.shields.io/npm/dm/storybook-addon-theme-provider)](http://npm-stats.org/#/storybook-addon-theme-provider)
-[![Maintenance](https://img.shields.io/maintenance/yes/2025)](https://github.com/morewings/storybook-addon-theme-provider)
 [![GitHub package.json dynamic](https://img.shields.io/github/package-json/types/morewings/storybook-addon-theme-provider)](https://github.com/morewings/storybook-addon-theme-provider)
 [![GitHub Repo stars](https://img.shields.io/github/stars/morewings/storybook-addon-theme-provider?style=social)](https://github.com/morewings/storybook-addon-theme-provider)
 

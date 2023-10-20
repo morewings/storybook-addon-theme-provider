@@ -96,7 +96,7 @@ Developer can use custom `Provider` component as well.
 ```tsx
 import React, {ReactNode} from 'react';
 
-export const Provider = <TTheme,>({children, theme}: {children?: ReactNode; theme: TTheme}) => {
+export const Provider = <TTheme,>({children, theme}: {children?: ReactNode; theme?: TTheme}) => {
     // apply theme somehow
     console.log('theme', theme)
     return <div>{children}</div>

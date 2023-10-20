@@ -7,7 +7,7 @@ import type {
 import { useGlobalThemesPreview } from "./useGlobalThemes";
 
 export const withThemeProvider =
-  (Provider: FC<{ children?: ReactNode; theme?: unknown }>) =>
+  <TTheme,>(Provider: FC<{ children?: ReactNode; theme?: TTheme }>) =>
   (
     StoryFn: StoryFunction<{
       component: FC;
@@ -17,7 +17,6 @@ export const withThemeProvider =
   ) => {
     const { themes = [], selectedTheme } = useGlobalThemesPreview();
 
-    // @ts-ignore
     const selectedThemeData = themes.find(
       ({ name }) => Boolean(selectedTheme) && name === selectedTheme
     );

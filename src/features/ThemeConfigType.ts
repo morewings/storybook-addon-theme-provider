@@ -1,5 +1,5 @@
-export type ThemeConfigType = {
+export type ThemeConfigType<TTheme = any> = {
     name: string;
     color?: string;
-    themeObject: Record<string, unknown>;
+    themeObject: TTheme;
 };

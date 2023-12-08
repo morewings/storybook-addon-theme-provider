@@ -145,7 +145,7 @@ packages:
       parse-author: 2.0.0
       parse-github-url: 1.0.2
       pretty-ms: 7.0.1
-      semver: 7.3.8
+      semver: 7.5.4
       signale: 1.4.0
       tapable: 2.2.1
       terminal-link: 2.1.1
@@ -172,7 +172,7 @@ packages:
       parse-author: 2.0.0
       parse-github-url: 1.0.2
       registry-url: 5.1.0
-      semver: 7.3.8
+      semver: 7.5.4
       tslib: 2.0.3
       typescript-memoize: 1.1.1
       url-join: 4.0.1
@@ -246,7 +246,7 @@ packages:
       debug: 4.3.4
       gensync: 1.0.0-beta.2
       json5: 2.2.3
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -324,7 +324,7 @@ packages:
       '@babel/helper-validator-option': 7.21.0
       browserslist: 4.21.5
       lru-cache: 5.1.1
-      semver: 6.3.0
+      semver: 6.3.1
 
   /@babel/helper-compilation-targets@7.22.15:
     resolution: {integrity: sha512-y6EEzULok0Qvz8yyLkCvVX+02ic+By2UdOhylwUOvOn9dvYc9mKICJuuU1n1XBI02YWsNsnrY1kc6DVbjcXbtw==}
@@ -3409,7 +3409,7 @@ packages:
       '@storybook/client-logger': 7.0.0
       '@storybook/components': 7.0.0(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.0.0
-      '@storybook/csf': 0.1.1-next.0
+      '@storybook/csf': 0.1.2-next.0
       '@storybook/docs-tools': 7.0.0
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -3598,7 +3598,7 @@ packages:
       prompts: 2.4.2
       puppeteer-core: 2.1.1
       read-pkg-up: 7.0.1
-      semver: 7.3.8
+      semver: 7.5.4
       simple-update-notifier: 2.0.0
       strip-json-comments: 3.1.1
       tempy: 1.0.1
@@ -3651,7 +3651,7 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       '@storybook/client-logger': 7.0.0
-      '@storybook/csf': 0.1.1-next.0
+      '@storybook/csf': 0.1.2-next.0
       '@storybook/global': 5.0.0
       '@storybook/theming': 7.0.0(react-dom@18.2.0)(react@18.2.0)
       '@storybook/types': 7.0.0
@@ -3795,7 +3795,7 @@ packages:
       pretty-hrtime: 1.0.3
       prompts: 2.4.2
       read-pkg-up: 7.0.1
-      semver: 7.3.8
+      semver: 7.5.4
       telejson: 7.2.0
       tiny-invariant: 1.3.1
       ts-dedent: 2.2.0
@@ -3841,8 +3841,8 @@ packages:
       type-fest: 2.19.0
     dev: true
 
-  /@storybook/csf@0.1.1-next.0:
-    resolution: {integrity: sha512-2M8E4CZOVW77P9lrgZZc2rcwxhNKVVykpzbcAauc3bots7xvDJMG60EasMRB/Y+cfqnSu6aaSUEVmKHTKsVJ3A==}
+  /@storybook/csf@0.1.2-next.0:
+    resolution: {integrity: sha512-Kf9XPAnO9VBxxYWNiW3pc1t7lDZ178VFfTCVWOm9r6Fdzm94j3zUNT06WiOojblVVaKsJktk8cT9b27Fmcxs5Q==}
     dependencies:
       type-fest: 2.19.0
     dev: false
@@ -3901,7 +3901,7 @@ packages:
       '@storybook/channels': 7.0.0
       '@storybook/client-logger': 7.0.0
       '@storybook/core-events': 7.0.0
-      '@storybook/csf': 0.1.1-next.0
+      '@storybook/csf': 0.1.2-next.0
       '@storybook/global': 5.0.0
       '@storybook/router': 7.0.0(react-dom@18.2.0)(react@18.2.0)
       '@storybook/theming': 7.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -3936,7 +3936,7 @@ packages:
       memoizerific: 1.11.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      semver: 7.3.8
+      semver: 7.5.4
       store2: 2.14.2
       telejson: 7.2.0
       ts-dedent: 2.2.0
@@ -3974,7 +3974,7 @@ packages:
       '@storybook/channels': 7.0.0
       '@storybook/client-logger': 7.0.0
       '@storybook/core-events': 7.0.0
-      '@storybook/csf': 0.1.1-next.0
+      '@storybook/csf': 0.1.2-next.0
       '@storybook/global': 5.0.0
       '@storybook/types': 7.0.0
       '@types/qs': 6.9.7
@@ -5287,7 +5287,7 @@ packages:
     dependencies:
       nice-try: 1.0.5
       path-key: 2.0.1
-      semver: 5.7.1
+      semver: 5.7.2
       shebang-command: 1.2.0
       which: 1.3.1
     dev: true
@@ -6818,7 +6818,7 @@ packages:
       '@babel/parser': 7.21.2
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.0
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7127,14 +7127,14 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       pify: 4.0.1
-      semver: 5.7.1
+      semver: 5.7.2
     dev: true
 
   /make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
     dependencies:
-      semver: 6.3.0
+      semver: 6.3.1
     dev: true
 
   /makeerror@1.0.12:
@@ -7397,7 +7397,7 @@ packages:
     dependencies:
       hosted-git-info: 2.8.9
       resolve: 1.22.1
-      semver: 5.7.1
+      semver: 5.7.2
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -8363,19 +8363,14 @@ packages:
     dependencies:
       loose-envify: 1.4.0
 
-  /semver@5.7.1:
-    resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
+  /semver@5.7.2:
+    resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
     dev: true
-
-  /semver@6.3.0:
-    resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
-    hasBin: true
 
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
-    dev: true
 
   /semver@7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
@@ -8383,6 +8378,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
 
   /semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}

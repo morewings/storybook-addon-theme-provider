@@ -96,9 +96,6 @@
       "optional": true
     }
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "storybook": {
     "displayName": "Theme provider addon",
     "supportedFrameworks": [

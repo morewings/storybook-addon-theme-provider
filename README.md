@@ -6,9 +6,11 @@
 [![GitHub package.json dynamic](https://img.shields.io/github/package-json/types/morewings/storybook-addon-theme-provider)](https://github.com/morewings/storybook-addon-theme-provider)
 [![GitHub Repo stars](https://img.shields.io/github/stars/morewings/storybook-addon-theme-provider?style=social)](https://github.com/morewings/storybook-addon-theme-provider)
 
-Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). **This addon is compatible with Storybook version 7.** Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-themes).
+Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). This addon is compatible with **Storybook versions 7 and 8**.
 
-<img src="./addon-demo-high.gif" alt="Storybook Addon theme-provider" width="429" height="234">
+Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-themes).
+
+<img src="./addon-demo-high.gif" alt="Storybook Addon theme-provider" width="420" height="200">
 
 ## Install
 

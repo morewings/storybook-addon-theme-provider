@@ -9,7 +9,7 @@
 
 > **Maintainer's personal appeal to the users** <br /><br />
 > Hi, my name is Dima. I created this Storybook add-on. Thanks for choosing it for your project. Hope it helps you to achieve your goals and implement your ideas.<br /><br />
- At this moment I'm looking for as job as a **Lead/Senior Front Developer in Berlin, Germany**. So I would like to ask you to **refer me to your company** if this is relevant to your case. Here you can find my [CV and portfolio](https://linktr.ee/morewings). In case it is not relevant, giving a star 🌟 to add-on [repo](https://github.com/morewings/storybook-addon-theme-provider) is also appreciated. I believe that having a popular open source repo helps a job search.<br /><br />
+ At this moment I'm looking for as job as a **Lead/Senior Front Developer in Berlin, Germany**. So I would like to ask you to **refer me to your company** if this is relevant to your case. Here you can find my [CV and portfolio](https://linktr.ee/morewings). In case it is not relevant, giving a star 🌟 to add-on [repo](https://github.com/morewings/storybook-addon-theme-provider) is also appreciated. I believe that having a popular open source project is helpful for a job search.<br /><br />
  Thanks and happy coding!
 
 

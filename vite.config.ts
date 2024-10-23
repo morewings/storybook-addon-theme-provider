@@ -1,7 +1,6 @@
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
-// @ts-expect-error no types
 import external from '@yelo/rollup-node-external';
 
 

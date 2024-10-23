@@ -1,15 +1,9 @@
-import React, {
-  memo,
-  useCallback,
-} from "react";
-import {
-  Icons,
-  IconButton,
-  WithTooltipPure,
-} from "@storybook/components";
+import React, { memo, useCallback } from "react";
+import { IconButton, WithTooltipPure } from "@storybook/components";
+import { Palette } from "@phosphor-icons/react";
 
 import { TOOL_ID } from "../constants";
-import {ThemeList} from './ThemeList';
+import { ThemeList } from "./ThemeList";
 import { useGlobalThemesManager } from "../features/useGlobalThemes";
 
 export type ThemeType = {
@@ -24,20 +18,20 @@ export const ThemeSwitcherTool = memo(function MyAddonSelector() {
 
   const handleSelect = useCallback(
     (name: string) => {
-      setSelectedTheme(name)
+      setSelectedTheme(name);
     },
-    [themes]
+    [themes],
   );
 
   return (
     <WithTooltipPure
+      trigger="click"
+      closeOnTriggerHidden={true}
+      closeOnOutsideClick={true}
       tooltip={<ThemeList onSelect={handleSelect} themes={themes} />}
     >
-      <IconButton
-        key={TOOL_ID}
-        title="Switch theme"
-      >
-        <Icons icon="mirror" />
+      <IconButton key={TOOL_ID} title="Switch theme">
+        <Palette size={16} color="#73828c" weight="fill" />
       </IconButton>
     </WithTooltipPure>
   );

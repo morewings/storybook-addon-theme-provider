@@ -37,24 +37,24 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "8.1.5",
-    "@storybook/addon-interactions": "8.1.5",
-    "@storybook/addon-links": "8.1.5",
-    "@storybook/react": "8.1.5",
-    "@storybook/react-vite": "8.1.5",
-    "@types/node": "18.19.33",
-    "@types/react": "18.3.3",
-    "@vitejs/plugin-react": "4.3.0",
+    "@storybook/addon-essentials": "8.3.6",
+    "@storybook/addon-interactions": "8.3.6",
+    "@storybook/addon-links": "8.3.6",
+    "@storybook/react": "8.3.6",
+    "@storybook/react-vite": "8.3.6",
+    "@types/node": "18.19.59",
+    "@types/react": "18.3.12",
+    "@vitejs/plugin-react": "4.3.3",
     "@yelo/rollup-node-external": "1.0.1",
-    "npm-run-all2": "6.2.0",
-    "prettier": "3.3.0",
+    "npm-run-all2": "6.2.6",
+    "prettier": "3.3.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "rimraf": "3.0.2",
-    "storybook": "8.1.5",
+    "rimraf": "6.0.1",
+    "storybook": "8.3.6",
     "typescript": "5.4.5",
-    "vite": "5.2.12",
-    "vite-plugin-dts": "3.9.1"
+    "vite": "5.4.10",
+    "vite-plugin-dts": "4.3.0"
   },
   "peerDependencies": {
     "@storybook/blocks": ">=7.0.0",
@@ -106,5 +106,8 @@
       "angular"
     ],
     "icon": "https://raw.githubusercontent.com/morewings/storybook-addon-theme-provider/master/logo.jpg"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.7"
   }
 }

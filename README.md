@@ -6,6 +6,28 @@
 [![GitHub package.json dynamic](https://img.shields.io/github/package-json/types/morewings/storybook-addon-theme-provider)](https://github.com/morewings/storybook-addon-theme-provider)
 [![GitHub Repo stars](https://img.shields.io/github/stars/morewings/storybook-addon-theme-provider?style=social)](https://github.com/morewings/storybook-addon-theme-provider)
 
+<div style='background-color:#ebffd1; border-left: solid #6bb21d 4px; padding:0.7em;'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>Maintainer's personal appeal to the users</b></p>
+<p style='margin-left:1em;'>
+Hi, my name is Dima.
+I created this Storybook add-on.
+Thanks for choosing it for your project.
+Hope it helps you to achieve your goals and implement your ideas. 
+</p>
+<p style='margin-left:1em;'>
+At this moment I'm looking for as job as a Lead/Senior front developer in Berlin, Germany.
+So I would like to ask you to <strong>refer me to your company</strong> if this is relevant to your case.
+Here you can find my <strong><a href="https://linktr.ee/morewings">CV and portfolio</a></strong>.
+In case it is not relevant,
+giving a star 🌟 to this <strong><a href="https://github.com/morewings/storybook-addon-theme-provider">repo</a></strong> is also appreciated.
+I believe that having popular open source repo helps job search.
+</p>
+<p style='margin-left:1em;'>Thanks and happy coding!</p>
+</span>
+</div>
+
 Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). This addon is compatible with **Storybook versions 7 and 8**.
 
 Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-themes).

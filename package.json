@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-theme-provider",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Storybook addon to manage global themes provided by Styled components, Emotion or any other solution based on React component. Compatible with Storybook versions 7 and 8",
   "keywords": [
     "emotion",

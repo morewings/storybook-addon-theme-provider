@@ -18,7 +18,7 @@ Addon to manage global themes provided by Styled components, Emotion or any othe
 
 Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-themes).
 
-<img src="./addon-demo-high.gif" alt="Storybook Addon theme-provider" width="420" height="200">
+<img src="./addon-demo-high.gif" alt="Storybook Addon theme-provider" width="436" height="234">
 
 ## Install
 

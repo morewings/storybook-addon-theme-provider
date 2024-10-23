@@ -31,7 +31,7 @@ export const ThemeSwitcherTool = memo(function MyAddonSelector() {
       tooltip={<ThemeList onSelect={handleSelect} themes={themes} />}
     >
       <IconButton key={TOOL_ID} title="Switch theme">
-        <Palette size={16} color="#73828c" weight="fill" />
+        <Palette size={16} color="#73828c" weight="regular" />
       </IconButton>
     </WithTooltipPure>
   );

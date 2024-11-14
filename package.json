@@ -38,11 +38,10 @@
   },
   "devDependencies": {
     "@storybook/addon-essentials": "8.3.6",
-    "@storybook/addon-interactions": "8.3.6",
     "@storybook/addon-links": "8.3.6",
     "@storybook/react": "8.3.6",
     "@storybook/react-vite": "8.3.6",
-    "@types/node": "18.19.59",
+    "@types/node": "18.19.64",
     "@types/react": "18.3.12",
     "@vitejs/plugin-react": "4.3.3",
     "@yelo/rollup-node-external": "1.0.1",
@@ -53,13 +52,11 @@
     "rimraf": "6.0.1",
     "storybook": "8.3.6",
     "typescript": "5.4.5",
-    "vite": "5.4.10",
+    "vite": "5.4.11",
     "vite-plugin-dts": "4.3.0"
   },
   "peerDependencies": {
-    "@storybook/blocks": ">=7.0.0",
     "@storybook/components": ">=7.0.0",
-    "@storybook/core-events": ">=7.0.0",
     "@storybook/manager-api": ">=7.0.0",
     "@storybook/preview-api": ">=7.0.0",
     "@storybook/theming": ">=7.0.0",
@@ -74,13 +71,7 @@
     "react-dom": {
       "optional": true
     },
-    "@storybook/blocks": {
-      "optional": true
-    },
     "@storybook/components": {
-      "optional": true
-    },
-    "@storybook/core-events": {
       "optional": true
     },
     "@storybook/manager-api": {

@@ -6,17 +6,17 @@
 [![GitHub package.json dynamic](https://img.shields.io/github/package-json/types/morewings/storybook-addon-theme-provider)](https://github.com/morewings/storybook-addon-theme-provider)
 [![GitHub Repo stars](https://img.shields.io/github/stars/morewings/storybook-addon-theme-provider?style=social)](https://github.com/morewings/storybook-addon-theme-provider)
 
+## Maintainer's personal appeal to the users
 
-> **Maintainer's personal appeal to the users**
-> 
-> Hi, my name is Dima. I created this Storybook add-on. Thanks for choosing it for your project. Hope it helps you to achieve your goals and implement your ideas.
-> 
-> At this moment I'm looking for as job as a **Lead/Senior Front Developer in Berlin, Germany**. So I would like to ask you to **refer me to your company** if this is relevant to your case. Here you can find my [CV and portfolio](https://linktr.ee/morewings). In case it is not relevant, giving a star 🌟 to add-on [repo](https://github.com/morewings/storybook-addon-theme-provider) is also appreciated. I believe that having a popular open source project is helpful for a job search.
->
-> Thanks and happy coding!
+Hi, my name is Dima. I created this Storybook add-on. Thanks for choosing it for your project. Hope it helps you to achieve your goals and implement your ideas.
 
+At this moment I'm looking for as job as a **Lead/Senior Front Developer in Berlin, Germany**. So I would like to ask you to **refer me to your company** if this is relevant to your case. Here you can find my [CV and portfolio](https://links.morewings.dev/). In case it is not relevant, giving a star 🌟 to add-on [repo](https://github.com/morewings/storybook-addon-theme-provider) is also appreciated. I believe that having a popular open source project is helpful for a job search.
 
-Addon to manage global themes provided by Styled components, Emotion or any other solution based on React component, which receives prop `theme?: Record<string, unknown>` and children node(s). This addon is compatible with **Storybook versions 7 and 8**.
+Thanks and happy coding!
+
+## Intro
+
+Add-on to manage global themes provided by Styled components, Emotion, or any other solution based on a React component, which receives prop `theme?: Record<string, unknown>` and children node. This add-on is compatible with **Storybook versions 7 and 8**.
 
 Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-themes).
 
@@ -24,7 +24,7 @@ Inspired by [storybook-addon-themes](https://github.com/tonai/storybook-addon-th
 
 ## Install
 
-1. Install addon with the package manager of your choice.
+1. Install add-on with the package manager of your choice.
 
 ```shell
 npm i -D storybook-addon-theme-provider
@@ -32,7 +32,7 @@ yarn add -D storybook-addon-theme-provider
 pnpm i -D storybook-addon-theme-provider
 ```
 
-2. Register addon in `.storybook/main.(js|ts)`
+2. Register add-on in `.storybook/main.(js|ts)`
 
 ```js
 export default {
@@ -88,7 +88,7 @@ export default {
 }
 ```
 
-It's also possible to enable decorator on story level.
+It is also possible to enable decorator on the story level.
 
 ```js
 // some CSF story file
@@ -100,7 +100,7 @@ export const story = {
 
 ## Use `Provider` component
 
-`Provider` is a React component which receives `theme` prop, containing selected theme object, and `children` nodes. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
+`Provider` is a React component which receives `theme` prop, containing a selected theme object, and `children` nodes. See [Styled component theming](https://styled-components.com/docs/advanced#theming) or [Emotion
 ThemeProvider](https://emotion.sh/docs/theming#themeprovider-reactcomponenttype).
 
 Developer can use custom `Provider` component as well.

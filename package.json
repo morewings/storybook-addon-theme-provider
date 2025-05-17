@@ -42,7 +42,7 @@
     "@storybook/react": "8.5.3",
     "@storybook/react-vite": "8.5.3",
     "@types/node": "18.19.100",
-    "@types/react": "18.3.12",
+    "@types/react": "18.3.21",
     "@vitejs/plugin-react": "4.3.4",
     "@yelo/rollup-node-external": "1.0.1",
     "npm-run-all2": "7.0.2",

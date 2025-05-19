@@ -43,7 +43,7 @@
     "@storybook/react-vite": "8.5.3",
     "@types/node": "18.19.100",
     "@types/react": "18.3.21",
-    "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react": "4.4.1",
     "@yelo/rollup-node-external": "1.0.1",
     "npm-run-all2": "8.0.2",
     "prettier": "3.5.0",
